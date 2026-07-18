@@ -69,7 +69,7 @@ The system uses a **Mamdani-type Fuzzy Inference System (FIS)** with:
 - **125 rules** (5 × 5 × 5, full combination of the 5 fuzzy sets per input)
 - **Methods**: AND = min, OR = max, Implication = min, Aggregation = max, Defuzzification = **centroid (COG)**
 
-The original FIS design file (can be opened in **MATLAB Fuzzy Logic Toolbox** / the `fuzzy` app) is available at [`fuzzy_design/fuzzy_fire_system.fis`](fuzzy_design/fuzzy_fire_system.fis).
+The original FIS design file (can be opened in **MATLAB Fuzzy Logic Toolbox** / the `fuzzy` app) is available at [`fuzzy_design/fuzzy-system.fis`](fuzzy_design/fuzzy-system.fis).
 
 ### Membership Functions
 
@@ -129,7 +129,7 @@ The original FIS design file (can be opened in **MATLAB Fuzzy Logic Toolbox** / 
 ├── firmware/
 │   └── fuzzy_fire_system.ino     # Main ESP32 code (fuzzy inference engine)
 ├── fuzzy_design/
-│   └── fuzzy_fire_system.fis        # FIS design file (MATLAB Fuzzy Logic Toolbox)
+│   └── fuzzy-system.fis        # FIS design file (MATLAB Fuzzy Logic Toolbox)
 ├── docs/
 │   ├── images/
 │   │   ├── 01_block_diagram.png
@@ -159,11 +159,7 @@ The original FIS design file (can be opened in **MATLAB Fuzzy Logic Toolbox** / 
 
 ### Steps
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<username>/<repo-name>.git
-   cd <repo-name>
-   ```
+1. Download `firmware/fuzzy_fire_system.ino`
 2. Open `firmware/fuzzy_fire_system.ino` in the Arduino IDE.
 3. Select the **ESP32 Dev Module** board and the appropriate serial port.
 4. Make sure the wiring matches the [schematic](docs/images/02_wiring_schematic.png) and the [pin configuration](#-pin-configuration) below.
@@ -201,15 +197,12 @@ To keep readings stable before they enter the fuzzification stage:
 
 ---
 
-## 🔮 Roadmap
+## 📄 License
 
-- [ ] Log sensor data & fuzzy decisions to an SD card / cloud (e.g., Firebase, Blynk)
-- [ ] Remote notifications (WiFi/Telegram bot) when the alarm is active
-- [ ] Re-tune the rule base based on field data
-- [ ] Add fail-safe mechanisms for sensor read failures (basic handling already exists for the DHT22)
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📄 License
+## 🙋 Contributors
 
-This project was built for a final/research project. Please add a license (e.g., MIT) as needed before publishing the repository.
+- Yunachz — [GitHub](https://github.com/Yunachz)
