@@ -6,22 +6,6 @@ Built on the **ESP32**, with the entire fuzzy inference engine (fuzzification �
 
 ---
 
-## 📋 Table of Contents
-
-- [System Architecture](#-system-architecture)
-- [Hardware Components](#-hardware-components)
-- [Wiring Schematic](#-wiring-schematic)
-- [Fuzzy Logic Design](#-fuzzy-logic-design)
-- [Prototype](#-prototype)
-- [Repository Structure](#-repository-structure)
-- [Getting Started](#-getting-started)
-- [Pin Configuration](#-pin-configuration)
-- [Sensor Filtering Details](#-sensor-filtering-details)
-- [Roadmap](#-roadmap)
-- [License](#-license)
-
----
-
 ## 🧩 System Architecture
 
 The system follows an **Input → Process → Output** flow:
